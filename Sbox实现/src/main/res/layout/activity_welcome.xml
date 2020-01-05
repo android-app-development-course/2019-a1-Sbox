@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sbox.welcome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/welcome"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/welcome_wel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="开启你的盒子"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_gravity="bottom"
+            android:background="@drawable/wel__button"
+            android:layout_marginBottom="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

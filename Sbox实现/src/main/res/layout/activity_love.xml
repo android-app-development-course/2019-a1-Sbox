@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sbox.love">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/love"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="20dp">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/LIKE"
+                android:layout_marginTop="80dp"
+                android:layout_alignParentBottom="true">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_refresh"
+                android:src="@mipmap/fresh"
+                app:borderWidth="5dp"
+                app:fabSize="normal"
+                app:backgroundTint="#00ffffff"
+                android:clickable="true"
+                app:layout_anchor="@id/LIKE"
+                app:layout_anchorGravity="bottom|right|end"
+                app:elevation="12dp"
+                app:pressedTranslationZ="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

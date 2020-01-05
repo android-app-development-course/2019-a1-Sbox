@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sbox.add">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/add"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="50dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:background="@drawable/edit"
+            android:hint="Title"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/add_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="15dp"
+            android:background="@drawable/edit"
+            android:hint="Write Down Yourself."
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/add_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/add_title"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_above="@+id/add_ok"
+            android:layout_below="@+id/add_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:src= "@mipmap/wear1"
+                        android:id="@+id/add_treasure1"
+                        android:scaleType="centerInside"
+                        android:background="#00ffffff"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/wear2"
+                        android:id="@+id/add_treasure2"
+                        android:scaleType="centerInside"
+                        android:background="#00ffffff"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/wear3"
+                        android:id="@+id/add_treasure3"
+                        android:scaleType="centerInside"
+                        android:background="#00ffffff"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/wear4"
+                        android:id="@+id/add_treasure4"
+                        android:scaleType="centerInside"
+                        android:background="#00ffffff"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/wear5"
+                        android:id="@+id/add_treasure5"
+                        android:scaleType="centerInside"
+                        android:background="#00ffffff"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/ok"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:background="@drawable/add_button"
+            android:id="@+id/add_ok"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

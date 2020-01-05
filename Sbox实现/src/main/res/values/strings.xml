@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Sbox</string>
+    <string name="edit">用户曾经记录下的文字、图片、语音、视频等</string>
+    <string name="cannot">Ꝋ</string>
+    <string name="ok">√</string>
+</resources>
